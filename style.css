@@ -4,15 +4,17 @@ body{
 #navbar{
     font-family: "Open Sans";
     background-color: whitesmoke;
-    display:flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: flex-start;
     border-style: none none none none;
     border-width: 1px;
     border-color: black;
-    margin:0em 0.2em 0em 0.2em;
-    
+     position:fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    text-align: center;
+    top:0;
+    height: 30%;
+    font-size: 0.9rem; 
 }
 #maintitle{
     font-weight: bold;
@@ -20,12 +22,17 @@ body{
     margin-left: 0ch;
     text-align: center;
 }
+header{
+    width: 100%;
+}
+nav a{
+    width:33.3%;
+}
 .nav-link{
     text-decoration: none;
     border-style: solid none none none;
     border-color: black;
     border-width: 1px;
-    width: 100%;
     max-width: 100%;
     padding-top: 0.8em;
     font-size: 1em;
@@ -36,6 +43,7 @@ body{
     color:white;
 }
 #main-doc{
+    margin-top: 12rem;;
     font-family: "Open Sans";
 }
 
@@ -69,13 +77,22 @@ p{
         width: 10em;
         padding-right: 1em;
         padding-left: 0.2em;
-        position: fixed;
-        height: 100%;
+        height: 70%;
         border-style: none;
-        top: 0%;
-             
+        top: 0;
+        position: fixed;
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        overflow: hidden;    
+        font-size: medium;         
+    }
+    nav a{
+        width:100%;
     }
     #main-doc{
         margin-left: 12em;
+        margin-top: 1rem;
     }
 }
